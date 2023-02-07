@@ -22,7 +22,7 @@ import Fade from 'react-reveal/Fade'
 const Sponsor = () => {
   return (
     <div id='sponsor' className='container_spons'>
-        <Fade bottom><h1 className="spons_title">our Sponsors</h1></Fade>
+        <Fade bottom><h1 className="spons_title">Our Sponsors</h1></Fade>
   
     <div className=" spons_wrapper">
     <Fade bottom><div className="spons_col"> <img className='sponsimg' src={newspons1} alt="" srcset="" /></div></Fade>

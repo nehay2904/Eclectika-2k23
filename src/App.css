@@ -70,8 +70,8 @@ p{
 }
 @media (max-width:900px) {
     .form_paper_section{
-        margin-top: 30px;
-         margin-bottom: 30px; 
+        margin-top: 10px;
+         margin-bottom: 10px; 
          display: flex; 
          padding: 20px;
         
@@ -80,8 +80,7 @@ p{
      .formwidth{
          display: flex;
          flex-direction: column;
-         /* padding: 10px; */
-         width: 250px;
+         width: 280px;
      }
     
     
