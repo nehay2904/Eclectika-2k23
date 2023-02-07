@@ -55,7 +55,7 @@
 
 @media (max-width:900px) {
     .container_spons{
-        height: 800vh;
+        height: 500vh;
         width: 100%;
         margin: 0;
         display: flex;

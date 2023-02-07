@@ -90,7 +90,7 @@
 @media (max-width:900px){
   .Overall_Gallery{
     margin: 0;
-    height: 400vh;
+    height: 310vh;
     background: #000;
     font-family: sans-serif;
     display: flex;
@@ -191,7 +191,7 @@
 
 @media (max-width:400px){
   .Overall_Gallery{
-    height: 440vh;
+    height: 380vh;
     background: #000;
     font-family: sans-serif;
     display: flex;
