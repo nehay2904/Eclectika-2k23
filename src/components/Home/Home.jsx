@@ -32,7 +32,7 @@ const Home = () => {
           </motion.h4>
 
 
-        <Try/>
+        {/* <Try/> */}
         </div>
       </div>
     </>
