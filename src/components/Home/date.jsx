@@ -2,7 +2,7 @@ import React from 'react';
 import CountdownTimer from './timer';
 
 const Try = () => {
-  const deadline = new Date('2023-02-11');
+  const deadline = new Date('2024-02-15');
 
   return (
     <div className="app">

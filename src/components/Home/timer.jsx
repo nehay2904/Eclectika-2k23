@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import './timer.css'
+import './timer.css';
 
 const CountdownTimer = ({ deadline }) => {
-  const [timeLeft, setTimeLeft] = useState(deadline - Date.now());
+  const calculateTimeLeft = () => {
+    const timeLeftValue = deadline - Date.now()-19800000;
+    return timeLeftValue > 0 ? timeLeftValue : 0;
+  };
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTimeLeft(deadline - Date.now());
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -40,4 +44,3 @@ const CountdownTimer = ({ deadline }) => {
 };
 
 export default CountdownTimer;
-
