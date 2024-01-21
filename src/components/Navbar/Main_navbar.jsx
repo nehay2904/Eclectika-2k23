@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './Navbar.css'
 import { motion } from 'framer-motion'
-import Black_logo from '../../Images/mainn_logo.png'
+import Black_logo from '../../Images/newtheme.png'
 import {
   BrowserRouter as Router,
   
