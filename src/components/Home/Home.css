@@ -1,6 +1,6 @@
 .home{
     height: 100vh;
-    background-image:linear-gradient(rgba(15, 15, 95,0.4), rgba(10, 11, 89,0.4)), url('../../Images/Final_bg.png');
+    background-image:linear-gradient(rgba(0, 0, 4, 0.6), rgba(0, 0, 0, 0.85)), url('../../Images/theme\ page\ photo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

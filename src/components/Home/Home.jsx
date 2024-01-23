@@ -28,7 +28,7 @@ const Home = () => {
           
          </div>
           <motion.h4 animate={{ opacity: [0, 1] }} transition={{ delay: 2, duration: 1 }} className="subtitle">
-             Lose yourself in the jurassic park in the wild and exciting events
+             Unlesh your inner hero at our super-hero themed events and soar!
           </motion.h4>
 
 
