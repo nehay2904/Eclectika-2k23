@@ -1,8 +1,8 @@
 
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import './Events.css'
 import Fade from 'react-reveal/Fade'
-
+import axios from 'axios'
 import MultiActionAreaCard from '../../materialUI/CardComponent'
 
 // import TeamData from "../../Data/Team"
@@ -23,6 +23,44 @@ import { Link } from 'react-router-dom';
 import { Button, Paper } from '@mui/material';
 
 const MainEvents = () => {
+
+  const [desc, setdesc] = useState('')
+  const [name, setname] = useState('')
+ 
+  const [eventData, seteventData] = useState([{
+   
+    name,
+    desc
+    
+  }])
+
+  const create_posts = (event) => {
+
+    event.preventDefault()
+
+
+    axios.post('http://localhost:8080/events_data', {  
+      name,
+      desc
+      
+    }).then((reevente) => {
+
+      seteventData([...eventData, {
+        name,
+       desc
+    
+      }])
+    }
+    )
+  
+  }
+
+  useEffect(() => {
+    axios.get('http://localhost:8080/get_events').then((response) => {
+      seteventData(response.data)
+    })
+
+  }, [3000])
   return (
     <div className='mainevents'>
       <div className='close_icon_team'>
@@ -60,8 +98,8 @@ const MainEvents = () => {
       <div className="eventscon">
         <Fade bottom>   <h4 className='subtitleevents'>Mini EVENTS</h4></Fade>
         <div className="mini_event_wrapper">
-            {MiniEvents.map((minievents,index) => (
-               <Fade bottom><div className="team_col"><Mini_Event e_desc={minievents.e_desc} desc={minievents.desc} /></div></Fade>
+            {eventData.map((minievents,index) => (
+               <Fade bottom><div className="team_col"><Mini_Event e_desc={minievents.name} desc={minievents.desc} /></div></Fade>
             ))}
         </div>
       </div>

@@ -17,6 +17,8 @@
 }
 .titlecon{
     display: flex;
+    position: absolute;
+    top: 50%;
 }
 .logo{
     justify-content: center;
@@ -44,6 +46,102 @@
     font-size: 20px;
     color:#99a0a7;
 }
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  .loading{
+    background: linear-gradient(to top ,#002047, #1d2951);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading2{
+    background: url('../../Images/dc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+  }
+  .bg{
+    height: 98vh;
+    position: absolute;
+    background: linear-gradient(rgba(0, 23, 195, 0.3),rgba(0, 17, 145, 0.3)), transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .logo{
+    width: 22%;
+      height: 28%;
+    border-radius: 50%;
+    animation: fadeOut 1s 1s  forwards, moveBackward 1s 1s  backwards,size 1s 1s backwards;
+    position: absolute;
+    top: 20%;
+    
+  }
+  
+  .logo2{
+    width: 22%;
+    height: 28%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    opacity: 0.6;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes moveBackward {
+    from {
+      transform: translate(0%, 50%);
+    }
+    to {
+      transform: translate(0%, 0%) translateY(0%);
+    }
+  }
+  @keyframes size {
+    from {
+      width: 25%;
+      height: 30%;
+    }
+    to {
+      width: 22%;
+      height: 28%;
+    }
+  }
+  
+  .title{
+    margin-top: 30%;
+    color: rgb(170, 170, 170);
+    font-size: 30px;
+  }
 @media (max-width:900px) {
     .home{
         height: 100vh;
@@ -79,4 +177,17 @@
     font-size: 10px;
     
 }
+ .title{
+    margin-top: 60%;
+    color: rgb(170, 170, 170);
+    font-size: 20px;
+  }
+   .logo2{
+    width: 30%;
+    height: 22%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    opacity: 0.6;
+  }
 }

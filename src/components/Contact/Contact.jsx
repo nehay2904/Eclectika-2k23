@@ -1,6 +1,5 @@
 import React from 'react'
 import './Contact.css'
-import Logo from '../../Images/Main_logo.png'
 import { FormLabel } from '@mui/material'
 import Form from '../Form/Forms'
 import Fade from 'react-reveal/Fade'
@@ -13,7 +12,12 @@ const Contact = () => {
   return (
     <div id='contact' className="Main_contact">
       <Fade bottom> <h1 className='footer_title'>ECLECTIKA</h1></Fade>
-      <Form />
+      <div className="forms">
+        <input className='contact_input' type="text" placeholder='Name'/>
+        <input className='contact_input' type="text" placeholder='Email'/>
+        <input className='contact_input' type="text" placeholder='Write your thoughts'/>
+        <button>Submit</button>
+      </div>
       <div className="left-side">
 					<div className="address details">
 						<i className="fas fa-map-marker-alt"></i>

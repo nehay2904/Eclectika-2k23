@@ -16,7 +16,7 @@ export default function Main_navbar() {
   const [navColor, setnavColor] = useState("transparent");
 
   const listenScrollEvent = () => {
-    window.scrollY > 100 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 100 ? setnavColor("#000f22") : setnavColor("transparent");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
   useEffect(() => {

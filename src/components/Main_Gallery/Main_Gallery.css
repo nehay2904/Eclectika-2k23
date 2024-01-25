@@ -1,6 +1,6 @@
 .Overall_Gallery{
     margin: 0;
-    min-height: 120vh;
+    min-height: 100vh;
     background: #000;
     font-family: sans-serif;
     display: flex;
@@ -90,7 +90,7 @@
 @media (max-width:900px){
   .Overall_Gallery{
     margin: 0;
-    height: 310vh;
+  min-height: 350vh;
     background: #000;
     font-family: sans-serif;
     display: flex;
@@ -191,8 +191,8 @@
 
 @media (max-width:400px){
   .Overall_Gallery{
-    height: 380vh;
-    background: #000;
+    min-height: 300vh;
+    background: #e1cccc;
     font-family: sans-serif;
     display: flex;
     justify-content: flex-start; 

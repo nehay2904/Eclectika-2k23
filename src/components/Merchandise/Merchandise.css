@@ -2,13 +2,15 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    background: url('../../Images/Events_image.png');
+    background:linear-gradient(rgba(4,9,49,0.6),rgba(4,9,49,0.6)),url('../../Images/avenger.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     /* padding: 40px; */
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .merchanImg{
@@ -16,10 +18,12 @@
     height: 400px;
     /* margin-left: 40px; */
 }
-.right_class{
+.register_class{
     /* text-align: center; */
+    margin-left: 30px;
     color: aliceblue;
     font-size: 15px;
+    
 }
 .merchantext{
     font-size: 17px;
@@ -40,16 +44,17 @@
     .main_merchan{
         display: flex;
         align-items: center;
-        height: 200vh;
+        min-height:   100vh;
         justify-content: center;
-        padding: 40px;
-        width: 100%;
+        padding: 0px;
+        min-width: 100%;
         flex-direction: column;
         padding-top: 100px;
+        position: absolute;
     }
     
     .merchanImg{
-        width: 350px;
+        width: 300px;
         height: 300px;
         /* margin-left: 40px; */
     }
@@ -57,10 +62,11 @@
         /* text-align: center; */
         color: aliceblue;
         font-size: 15px;
-        justify-content: center;
-        align-items: center;
-        margin-right: 100px;
+        /* justify-content: ; */
+        /* align-items: center; */
+       
         margin-top: 30px;
+        width:440px;
     }
     .merchantext{
         font-size: 15px;
